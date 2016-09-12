@@ -308,11 +308,11 @@ public class MainActivity extends AppCompatActivity {
                 //valueB=0;   // wenn hypothenuse ist already entered, then calculate side
                 valueC=parseDouble(valueStrC,unitC);
             }
-            if ( (valueB > 0) && (valueStrC.isEmpty()) ) {
+            if ((valueB > 0) && (valueStrC.isEmpty())) {
                 hypothenuseLength = HelperClass.CalculateHypotenuse(valueA, valueB, unitC);
                 updateSideC(hypothenuseLength);
             }
-            else if (valueC > 0) {
+            else if (valueC > 0)  {
                 double side = HelperClass.CalculateSide(valueC, valueA, unitB);
                 updateSideB(side);
             }
@@ -354,7 +354,7 @@ public class MainActivity extends AppCompatActivity {
                 valueC=parseDouble(valueStrC,unitC);
             }
 
-            if ( (valueA > 0) && (valueStrC.isEmpty()) ) {
+            if ((valueA > 0) && (valueStrC.isEmpty())) {
                 hypothenuseLength = HelperClass.CalculateHypotenuse(valueB, valueA, unitC);
                 updateSideC(hypothenuseLength);
             }
