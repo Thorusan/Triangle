@@ -287,6 +287,7 @@ public class MainActivity extends AppCompatActivity {
         public void afterTextChanged(Editable s) {
             double hypothenuseLength = 0.0;
             double valueA, valueB,valueC;
+            double test;
             String valueStrA = editSideA.getText().toString();
             String valueStrB = editSideB.getText().toString();
             String valueStrC = editSideC.getText().toString();
