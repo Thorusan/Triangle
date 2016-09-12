@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -271,6 +273,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+
     private final TextWatcher watcherA = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -302,6 +306,7 @@ public class MainActivity extends AppCompatActivity {
             if (valueStrC.isEmpty()) {
                 valueC= 0;
             } else {
+                //valueB=0;   // wenn hypothenuse ist already entered, then calculate side
                 valueC=parseDouble(valueStrC,unitC);
             }
             if (valueB > 0) {
@@ -346,6 +351,7 @@ public class MainActivity extends AppCompatActivity {
             if(valueStrC.isEmpty()) {
                 valueC=0d;
             } else {
+                //valueA=0; // wenn hypothenuse ist already entered, then calculate side
                 valueC=parseDouble(valueStrC,unitC);
             }
 
