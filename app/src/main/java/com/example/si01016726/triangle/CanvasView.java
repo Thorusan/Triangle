@@ -62,7 +62,6 @@ public class CanvasView extends View {
 		// 1-2 = a
 		// 2-3 = b
 		// 3-1 = c
-
 		mPath.reset();
 		mPath.moveTo(pointA.x, pointA.y);
 		mPath.lineTo(pointB.x, pointB.y);

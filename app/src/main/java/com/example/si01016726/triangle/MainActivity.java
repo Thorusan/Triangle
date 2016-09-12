@@ -274,7 +274,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private final TextWatcher watcherA = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -309,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
                 //valueB=0;   // wenn hypothenuse ist already entered, then calculate side
                 valueC=parseDouble(valueStrC,unitC);
             }
-            if (valueB > 0) {
+            if ( (valueB > 0) && (valueStrC.isEmpty()) ) {
                 hypothenuseLength = HelperClass.CalculateHypotenuse(valueA, valueB, unitC);
                 updateSideC(hypothenuseLength);
             }
@@ -355,7 +354,7 @@ public class MainActivity extends AppCompatActivity {
                 valueC=parseDouble(valueStrC,unitC);
             }
 
-            if (valueA > 0) {
+            if ( (valueA > 0) && (valueStrC.isEmpty()) ) {
                 hypothenuseLength = HelperClass.CalculateHypotenuse(valueB, valueA, unitC);
                 updateSideC(hypothenuseLength);
             }
