@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String valueStrC = editSideC.getText().toString();
                 double valueC;
+                double test;
 
                 switch (position) {
                     case 0:
