@@ -228,25 +228,25 @@ public class MainActivity extends AppCompatActivity {
 
     private double convertParseDouble(String value , String unit, String previousUnit) {
         try {
-            if (unit==previousUnit) {
+            if (unit.equals(previousUnit)) {
                 return Double.parseDouble(value);
             }
-            else if ((unit==UNIT_MM)&&(previousUnit==UNIT_CM)) {
+            else if ((unit.equals(UNIT_MM))&&(previousUnit.equals(UNIT_CM))) {
                 return Double.parseDouble(value)*10d;
             }
-            else if ((unit==UNIT_MM)&&(previousUnit==UNIT_M)) {
+            else if ((unit.equals(UNIT_MM))&&(previousUnit.equals(UNIT_M))) {
                 return Double.parseDouble(value)*1000d;
             }
-            else if ((unit==UNIT_CM)&&(previousUnit==UNIT_MM)) {
+            else if ((unit.equals(UNIT_CM))&&(previousUnit.equals(UNIT_MM))) {
                 return (Double.parseDouble(value)/10d);
             }
-            else if ((unit==UNIT_CM)&&(previousUnit==UNIT_M)) {
+            else if ((unit.equals(UNIT_CM))&&(previousUnit.equals(UNIT_M))) {
                 return (Double.parseDouble(value)*100d);
             }
-            else if ((unit==UNIT_M)&&(previousUnit==UNIT_MM)) {
+            else if ((unit.equals(UNIT_M))&&(previousUnit.equals(UNIT_MM))) {
                 return  (Double.parseDouble(value)/1000d);
             }
-            else if ((unit==UNIT_M)&&(previousUnit==UNIT_CM)) {
+            else if ((unit.equals(UNIT_M))&&(previousUnit.equals(UNIT_CM))) {
                 return  (Double.parseDouble(value)/100d);
             }
 
