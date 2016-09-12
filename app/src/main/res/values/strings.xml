@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Triangle</string>
+
+    <string-array name="spinnerItems">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+    </string-array>
+</resources>
