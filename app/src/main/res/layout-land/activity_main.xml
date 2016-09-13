@@ -103,11 +103,16 @@
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Pocisti"
+            android:text="Počisti"
             android:id="@+id/btnClear"/>
 
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Izračunaj"
+            android:id="@+id/btnCalculate"/>
     </LinearLayout>
 
 
